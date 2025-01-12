@@ -30,7 +30,7 @@ class Gagak {
     this.directionY = Math.random() * 5 - 2.5;
     this.markedForDelete = false;
     this.image = new Image();
-    this.image.src = "img/raven.png";
+    this.image.src = "/img/raven.png";
     this.frame = 0;
     this.maxFrame = 4;
     this.timeSinceFlap = 0;
@@ -97,7 +97,7 @@ let ledakan = [];
 class Ledakan {
   constructor(x, y, size) {
     this.image = new Image();
-    this.image.src = "img/boom.png";
+    this.image.src = "/img/boom.png";
     this.spriteWidth = 200;
     this.spriteHeight = 179;
     this.size = size;
@@ -165,7 +165,6 @@ class Particle {
 }
 function drawScore() {
   const fontSize = canvas.width * 0.2;
-  console.log("size" + fontSize);
   ctx.font = "${fontSize}px Impact";
   ctx.fillStyle = "black";
   ctx.fillText("Score : " + score, 52, 72);
