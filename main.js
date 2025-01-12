@@ -30,7 +30,7 @@ class Gagak {
     this.directionY = Math.random() * 5 - 2.5;
     this.markedForDelete = false;
     this.image = new Image();
-    this.image.src = "../img/raven.png";
+    this.image.src = "img/raven.png";
     this.frame = 0;
     this.maxFrame = 4;
     this.timeSinceFlap = 0;
@@ -97,7 +97,7 @@ let ledakan = [];
 class Ledakan {
   constructor(x, y, size) {
     this.image = new Image();
-    this.image.src = "../img/boom.png";
+    this.image.src = "img/boom.png";
     this.spriteWidth = 200;
     this.spriteHeight = 179;
     this.size = size;
@@ -105,7 +105,7 @@ class Ledakan {
     this.y = y;
     this.frame = 0;
     this.audio = new Audio();
-    this.audio.src = "../sound/boom.wav";
+    this.audio.src = "sound/boom.wav";
     this.timeSinceLastFrame = 0;
     this.frameInterval = 200;
     this.markedForDelete = false;
